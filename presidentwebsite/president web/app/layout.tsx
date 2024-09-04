@@ -46,12 +46,7 @@ export default function RootLayout({
 							{children}
 						</main>
 						<footer className="w-full flex items-center justify-center py-3">
-							<Link
-								isExternal
-								className="flex items-center gap-1 text-current"
-								href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-								title="nextui.org homepage"
-							>
+							<Link href="https://nextui.org" target="_blank" rel="noopener noreferrer">
 								<span className="text-default-600">Powered by</span>
 								<p className="text-primary">NextUI</p>
 							</Link>
@@ -59,6 +54,6 @@ export default function RootLayout({
 					</div>
 				</Providers>
 			</body>
-		</html>
+		</html >
 	);
 }

@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
 	const router = useRouter();
-	const linkToDocs = { href: siteConfig.navItems.find((item) => item.label === "Docs")?.href ?? "/" };
+	const linkToDocs = { href: siteConfig.navItems.find((item) => item.label === "About")?.href ?? "/" };
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 			<div className="flex flex-wrap justify-center items-center gap-4">
@@ -42,15 +42,15 @@ export default function Home() {
 					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
 					onPress={() => router.push(linkToDocs.href)}
 				>
-					Documentation
+					About me
 				</Link>
 				<Link
 					isExternal
+					isDisabled // Temporary disabled
 					className={buttonStyles({ variant: "bordered", radius: "full" })}
 					href={siteConfig.links.github}
 				>
-					<GithubIcon size={20} />
-					GitHub
+					Support
 				</Link>
 			</div>
 
@@ -76,7 +76,7 @@ export default function Home() {
 									<li>Community Outreach: Strengthen community outreach programs to promote the benefits of dance and expand USA Dance's reach to underserved communities.</li>
 								</ul>
 
-								<Button size="sm" onPress={() => router.push('/docs')}>
+								<Button size="sm" onPress={() => router.push('/social')}>
 									Read More Social Dancing and Community Engagement
 								</Button>
 							</li>
@@ -87,7 +87,7 @@ export default function Home() {
 									<li>Supporting Athletes: Provide increased support and resources for competitive dancers, including training programs, financial assistance, and mentorship opportunities.</li>
 									<li>Expanding Competition Opportunities: Partner with international organizations to host world-class competitions and showcase the talent and dedication of USA Dance athletes on a global stage.</li>
 								</ul>
-								<Button size="sm">
+								<Button size="sm" onPress={() => router.push('/competitive-dance')}>
 									Read More Professional Sport and Competition
 								</Button>
 							</li>
@@ -98,7 +98,7 @@ export default function Home() {
 									<li>Transparency and Accountability: Implement transparent governance practices and mechanisms for accountability to ensure the integrity and effectiveness of the organization.</li>
 									<li>Member Engagement: Foster a culture of member engagement and participation through regular communication, feedback mechanisms, and opportunities for involvement in decision-making processes.</li>
 								</ul>
-								<Button size="sm">
+								<Button size="sm" onPress={() => router.push('/structure')}>
 									Read More Organizational Health and Governance
 								</Button>
 							</li>
@@ -109,7 +109,7 @@ export default function Home() {
 									<li>Diversifying Revenue Streams: Explore and develop new revenue streams, such as sponsorships, partnerships, and fundraising initiatives, to enhance financial stability and support organizational growth.</li>
 									<li>Efficient Resource Allocation: Develop strategic plans for resource allocation, budgeting, and financial management to maximize the impact of available resources and ensure long-term sustainability.</li>
 								</ul>
-								<Button size="sm">
+								<Button size="sm" onPress={() => router.push('/finance')}>
 									Read More Financial Stability and Sustainability
 								</Button>
 							</li>

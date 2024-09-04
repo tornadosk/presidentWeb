@@ -3,63 +3,91 @@ import { d } from "@nextui-org/slider/dist/use-slider-64459b54";
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Aleh Kulyba President Campaign for USA Dance",
+	description: "President Campaign for USA Dance",
 	navItems: [
+	{
+		label: "Home",
+		href: "/",
+	},
+    {
+      	label: "Social",
+     	href: "/social",
+    },
+	{	
+		label: "College Dance",
+		href: "/college-dance",
+	},
+    {
+      	label: "DanceSport",
+      	href: "/competitive-dance",
+    },
+	{
+		label: "Senior Dance",
+		href: "/senior-dance",
+	},
+    {
+      	label: "Breaking",
+      	href: "/breaking",
+    },
+	{
+		label: "Structure",
+		href: "/structure",
+	},
+	{
+		label: "Finance",
+		href: "/finance",
+	},
+	{
+		label: "Dance Education",
+		href: "/dance-education",
+	},
+	{
+		label: "About",
+		href: "/about",
+  	},
+	],
+	navMenuItems: [
 		{
 			label: "Home",
 			href: "/",
 		},
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
-	],
-	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			  label: "Social",
+			 href: "/social",
+		},
+		{	
+			label: "College Dance",
+			href: "/college-dance",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			  label: "DanceSport",
+			  href: "/competitive-dance",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "Senior Dance",
+			href: "/senior-dance",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			  label: "Breaking",
+			  href: "/breaking",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "Structure",
+			href: "/structure",
 		},
-		// {
-		// 	label: "Settings",
-		// 	href: "/settings",
-		// },
 		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
+			label: "Finance",
+			href: "/finance",
 		},
-		// {
-		// 	label: "Logout",
-		// 	href: "/logout",
-		// },
+		{
+			label: "Dance Education",
+			href: "/dance-education",
+		},
+		{
+			label: "About",
+			href: "/about",
+		  },
 	],
 	links: {
 		github: "https://github.com/nextui-org/nextui",
@@ -69,14 +97,15 @@ export const siteConfig = {
     sponsor: "https://patreon.com/jrgarciadev"
 	},
 	linksToInternals: {
-		docs: "/docs",
-		profile: "/profile",
-		dashboard: "/dashboard",
-		projects: "/projects",
-		team: "/team",
-		calendar: "/calendar",
-		settings: "/settings",
-		helpFeedback: "/help-feedback",
-		logout: "/logout",
+		home: "/",
+		social: "/social",
+		college: "/college-dance",
+		danceSport: "/dance-sport",
+		senior: "/senior-dance",
+		breaking: "/breaking",
+		structure: "/structure",
+		finance: "/finance",
+		danceEducation: "/dance-education",
+		about: "/about",
 	},
 };
