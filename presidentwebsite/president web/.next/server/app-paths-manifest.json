@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/breaking/page": "app/breaking/page.js",
+  "/competitive-dance/page": "app/competitive-dance/page.js",
+  "/college-dance/page": "app/college-dance/page.js",
+  "/dance-education/page": "app/dance-education/page.js",
+  "/finance/page": "app/finance/page.js",
+  "/senior-dance/page": "app/senior-dance/page.js",
+  "/social/page": "app/social/page.js",
+  "/structure/page": "app/structure/page.js"
+}
