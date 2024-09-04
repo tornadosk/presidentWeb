@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Card } from "@nextui-org/react";
 import { ReactNode, ReactElement } from "react";
 

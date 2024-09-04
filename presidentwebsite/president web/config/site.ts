@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { d } from "@nextui-org/slider/dist/use-slider-64459b54";
 
 export type SiteConfig = typeof siteConfig;

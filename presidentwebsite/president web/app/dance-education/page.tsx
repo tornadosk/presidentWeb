@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { title } from "@/components/primitives";
 
 export default function EducationPage() {

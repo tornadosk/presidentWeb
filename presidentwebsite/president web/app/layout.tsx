@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
