@@ -3,7 +3,7 @@ import { title } from "@/components/primitives";
 
 export default function SocialPage() {
 	return (
-		<div className="flex flex-wrap justify-center items-center gap-4">
+		<div className="flex flex-wrap justify-center items-center gap-4 ">
 			<h1 className={title()}>Social Dancing</h1>
 			<p className="mb-4">
 				To develop and improve social dancing events and the structure of USA Dance Chapters, a comprehensive strategy is essential. This plan should address several key areas: event planning and execution, chapter structure enhancement, communication and guidance, member engagement, and partnerships. Below is a detailed plan:

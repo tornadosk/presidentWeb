@@ -10,7 +10,7 @@ export default function EducationPage() {
 			</p>
 			<h2 className="text-xl font-bold mt-8">Expand Dance Styles</h2>
 			<p className="mb-4"	>
-				USA Dance should broaden its educational programs to include more dance styles, such as Hip-Hop, Salsa, and Contemporary, in addition to traditional ballroom and Latin. This involves setting up committees of experts for each style to create and oversee educational content.
+				USA Dance should broaden its educational programs to include more dance styles, such as Hip-Hop, Salsa, and Contemporary, in addition to traditional International and American Styles. This involves setting up committees of experts for each style to create and oversee educational content.
 			</p>
 			<h2 className="text-xl font-bold mt-8">Develop Certification Programs</h2>
 			<p className="mb-4"	>

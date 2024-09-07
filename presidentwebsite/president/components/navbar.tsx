@@ -14,13 +14,14 @@ import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
-
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/modal";
+import { Textarea } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
-
+import { button as buttonStyles } from "@nextui-org/theme";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
 	TwitterIcon,
@@ -31,8 +32,44 @@ import {
 
 import { Logo } from "@/components/icons";
 
+
 export const Navbar = () => {
+	const { isOpen, onOpen, onOpenChange } = useDisclosure();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [value, setValue] = useState('');
+	const [valueText, setValueText] = useState('');
+	const [isInvalid, setIsInvalid] = useState(true);
+
+	const validateEmail = (email: string) => {
+		const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		return re.test(String(email).toLowerCase());
+	};
+
+	const handleEmailChange = (email: string) => {
+		setValue(email);
+		setIsInvalid(!validateEmail(email));
+	};
+	const handleSubmit = async () => {
+		if (!isInvalid) {
+			try {
+				const response = await fetch('https://email-api-alpha.vercel.app/api/email', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({ email: value, message: valueText })
+				});
+				if (response.ok) {
+					console.log('Email submitted successfully');
+					onOpenChange();
+				} else {
+					console.error('Failed to submit email');
+				}
+			} catch (error) {
+				console.error('Error submitting email:', error);
+			}
+		}
+	};
 
 	const handleMenuToggle = () => {
 		console.log("handleMenuToggle");
@@ -106,17 +143,55 @@ export const Navbar = () => {
 				</NavbarItem>
 				{/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
 				<NavbarItem className="hidden md:flex">
-					<Button
-						isDisabled
-						isExternal
-						as={Link}
-						className="text-sm font-normal text-default-600 bg-default-100"
-						href={siteConfig.links.sponsor}
+					<Button onPress={onOpen}
 						startContent={<HeartFilledIcon className="text-danger" />}
-						variant="flat"
-					>
-						Support
-					</Button>
+						className={buttonStyles({ variant: "bordered", radius: "full" })}
+					>Support</Button>
+					<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+						<ModalContent>
+							{(onClose) => (
+								<>
+									<ModalHeader className="flex flex-col gap-1">Support</ModalHeader>
+									<ModalBody>
+										<Input
+											isRequired
+											value={value}
+											type="email"
+											label="Email"
+											variant="bordered"
+											isInvalid={isInvalid}
+											color={isInvalid ? "danger" : "success"}
+											errorMessage="Please enter a valid email"
+											onValueChange={handleEmailChange}
+											className="max-w-xs"
+										/>
+										<p>Stay updated on my journey to becoming the next USA Dance President! Subscribe for exclusive updates, upcoming plans, and ways to get involved. Let’s build the future of dance together!
+										</p>
+										<Textarea
+											variant="faded"
+											label="Leave a message"
+											placeholder="Enter a feedback message / question / suggestion"
+											description="Enter a feedback message / question / suggestion"
+											className="max-w-xs"
+											value={valueText}
+											onValueChange={setValueText}
+										/>
+										<p>
+											Your voice matters! Share your questions, feedback, or messages of support as we work together to shape the future of USA Dance. I’d love to hear from you!
+										</p>
+									</ModalBody>
+									<ModalFooter>
+										<Button color="danger" variant="light" onPress={onClose}>
+											Close
+										</Button>
+										<Button color="primary" onPress={handleSubmit} isDisabled={isInvalid}>
+											Support Submit
+										</Button>
+									</ModalFooter>
+								</>
+							)}
+						</ModalContent>
+					</Modal>
 				</NavbarItem>
 			</NavbarContent>
 
@@ -124,12 +199,61 @@ export const Navbar = () => {
 				{/* <Link isExternal href={siteConfig.links.github} aria-label="Github">
 					<GithubIcon className="text-default-500" />
 				</Link> */}
+				<Button onPress={onOpen}
+					startContent={<HeartFilledIcon className="text-danger" />}
+					className={buttonStyles({ variant: "bordered", radius: "full" })}
+				>Support</Button>
+				<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+					<ModalContent>
+						{(onClose) => (
+							<>
+								<ModalHeader className="flex flex-col gap-1">Support</ModalHeader>
+								<ModalBody>
+									<Input
+										isRequired
+										value={value}
+										type="email"
+										label="Email"
+										variant="bordered"
+										isInvalid={isInvalid}
+										color={isInvalid ? "danger" : "success"}
+										errorMessage="Please enter a valid email"
+										onValueChange={handleEmailChange}
+										className="max-w-xs"
+									/>
+									<p>Stay updated on my journey to becoming the next USA Dance President! Subscribe for exclusive updates, upcoming plans, and ways to get involved. Let’s build the future of dance together!
+									</p>
+									<Textarea
+										variant="faded"
+										label="Leave a message"
+										placeholder="Enter a feedback message / question / suggestion"
+										description="Enter a feedback message / question / suggestion"
+										className="max-w-xs"
+										value={valueText}
+										onValueChange={setValueText}
+									/>
+									<p>
+										Your voice matters! Share your questions, feedback, or messages of support as we work together to shape the future of USA Dance. I’d love to hear from you!
+									</p>
+								</ModalBody>
+								<ModalFooter>
+									<Button color="danger" variant="light" onPress={onClose}>
+										Close
+									</Button>
+									<Button color="primary" onPress={handleSubmit} isDisabled={isInvalid}>
+										Support Submit
+									</Button>
+								</ModalFooter>
+							</>
+						)}
+					</ModalContent>
+				</Modal>
 				<ThemeSwitch />
 				<NavbarMenuToggle onClick={handleMenuToggle} />
 			</NavbarContent>
 
 			<NavbarMenu>
-				<div className="mx-4 mt-2 flex flex-col gap-2">
+				<div className="mx-6 mt-6 flex flex-col gap-6">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<NextLink

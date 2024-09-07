@@ -20,8 +20,7 @@ export default function AboutPage() {
 				</p><p className="mb-4">
 					These two worlds—dance and technology—might seem worlds apart, but they’ve taught me the same core values: discipline, creativity, and the ability to lead and innovate. As I continue to coach National Champions and participate in social dance events, I bring the same commitment and strategic thinking to the dance community that I do to the corporate boardroom.
 				</p><p className="mb-4">
-					Now, as I run for President of USA Dance, I’m driven b
-					y the same passion that started when I was just four years old. I’m dedicated to building a stronger, more inclusive community where dancers of all levels and backgrounds can flourish.</p>
+					Now, as I run for President of USA Dance, I’m driven by the same passion that started when I was just four years old. I’m dedicated to building a stronger, more inclusive community where dancers of all levels and backgrounds can flourish.</p>
 			</div>
 		</Card>
 	);

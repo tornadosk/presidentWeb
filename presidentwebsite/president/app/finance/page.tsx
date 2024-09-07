@@ -74,7 +74,7 @@ export default function FinancePage() {
 				<h3>Key Actions:</h3>
 				<ul>
 					<li><strong>Youth Programs:</strong> Design and launch youth dance programs, targeting schools and community centers. Budget for program development, instructor training, and marketing ($500,000 - $1 million).</li>
-					<li><strong>Competitive Pathways:</strong> Expand and formalize DanceSport competitions at the regional and national levels, including age-specific categories and Pro-Am divisions. Allocate funds for event organization, venues, and marketing ($1 million).</li>
+					<li><strong>Competitive Pathways:</strong> Expand and formalize DanceSport competitions at the regional and national levels, including age-specific categories and Teacher-Student divisions. Allocate funds for event organization, venues, and marketing ($1 million).</li>
 					<li><strong>Professional Development:</strong> Establish certification programs and training workshops for instructors and judges. Budget for curriculum development, training materials, and online platforms ($300,000 - $500,000).</li>
 					<li><strong>Pilot Programs:</strong> Implement pilot programs in 3-5 key regions to test and refine the new initiatives before national rollout. Allocate funds for pilot execution, monitoring, and evaluation ($500,000).</li>
 				</ul>
@@ -135,24 +135,24 @@ export default function FinancePage() {
 				</p>
 			</div>
 			<div>
-				<h2 className="text-xl font-bold mt-8">Example of USA Dance Plan for developing the Pro-Am division, running in parallel to the overall strategic plan, with estimated expenses and potential returns.</h2>
+				<h2 className="text-xl font-bold mt-8">Example of USA Dance Plan for developing the Teacher-Student division, running in parallel to the overall strategic plan, with estimated expenses and potential returns.</h2>
 				<p className="mb-4">
-					Developing a Pro-Am (Professional-Amateur) division within USA Dance can be a lucrative parallel strategy to generate revenue and support other organizational developments. Pro-Am divisions are popular in the dance world because they attract both amateurs willing to invest in high-quality dance instruction and professionals who can benefit financially from teaching and competing with these amateurs.
+					Developing a Teacher-Student division within USA Dance can be a lucrative parallel strategy to generate revenue and support other organizational developments. Teacher-Student divisions are popular in the dance world because they attract both amateurs willing to invest in high-quality dance instruction and professionals who can benefit financially from teaching and competing with these amateurs.
 				</p>
 				<p className="mb-4">
-					Here's a plan for developing the Pro-Am division, running in parallel to the overall strategic plan, with estimated expenses and potential returns.
+					Here's a plan for developing the Teacher-Student division, running in parallel to the overall strategic plan, with estimated expenses and potential returns.
 				</p>
 
 				<h3 className="text-lg font-bold mt-4">Phase 1: Market Research and Strategic Planning (0 - 6 Months)</h3>
 				<p><strong>Objectives:</strong></p>
 				<ul>
-					<li>Conduct market research to understand the potential demand for Pro-Am competitions within USA Dance.</li>
-					<li>Develop a strategic plan that outlines the structure, pricing, and marketing of the Pro-Am division.</li>
+					<li>Conduct market research to understand the potential demand for Teacher-Student competitions within USA Dance.</li>
+					<li>Develop a strategic plan that outlines the structure, pricing, and marketing of the Teacher-Student division.</li>
 				</ul>
 				<p><strong>Key Actions:</strong></p>
 				<ul>
-					<li><strong>Market Research:</strong> Survey current and potential members, analyzing trends from existing Pro-Am competitions run by other organizations (e.g., Fred Astaire, Arthur Murray). Budget: $50,000.</li>
-					<li><strong>Strategic Planning:</strong> Develop a detailed business plan for the Pro-Am division, including pricing models, competition structure, and marketing strategies. Budget: $25,000.</li>
+					<li><strong>Market Research:</strong> Survey current and potential members, analyzing trends from existing Teacher-Student competitions run by other organizations (e.g., Fred Astaire, Arthur Murray). Budget: $50,000.</li>
+					<li><strong>Strategic Planning:</strong> Develop a detailed business plan for the Teacher-Student division, including pricing models, competition structure, and marketing strategies. Budget: $25,000.</li>
 				</ul>
 				<p><strong>Estimated Expenses:</strong> $75,000</p>
 				<p><strong>Timeline:</strong> 0 - 6 months</p>
@@ -160,14 +160,14 @@ export default function FinancePage() {
 				<h3 className="text-lg font-bold mt-4">Phase 2: Program Development and Pilot Competitions (6 - 18 Months)</h3>
 				<p><strong>Objectives:</strong></p>
 				<ul>
-					<li>Develop the Pro-Am competition framework and pilot it in key regions.</li>
+					<li>Develop the Teacher-Student competition framework and pilot it in key regions.</li>
 					<li>Build initial awareness and attract participants.</li>
 				</ul>
 				<p><strong>Key Actions:</strong></p>
 				<ul>
 					<li><strong>Competition Framework:</strong> Design the competition format, including categories, scoring systems, and prize structures. Budget: $50,000.</li>
-					<li><strong>Professional Engagement:</strong> Recruit top professionals and dance studios to participate in the Pro-Am division. Offer incentives such as discounted participation fees for early adopters. Budget: $100,000.</li>
-					<li><strong>Pilot Competitions:</strong> Run pilot Pro-Am competitions in 3-5 major cities to test the format and refine the approach. Include marketing, venue rentals, and operational costs. Budget: $300,000.</li>
+					<li><strong>Professional Engagement:</strong> Recruit top professionals and dance studios to participate in the Teacher-Student division. Offer incentives such as discounted participation fees for early adopters. Budget: $100,000.</li>
+					<li><strong>Pilot Competitions:</strong> Run pilot Teacher-Student competitions in 3-5 major cities to test the format and refine the approach. Include marketing, venue rentals, and operational costs. Budget: $300,000.</li>
 					<li><strong>Marketing and Promotion:</strong> Launch targeted marketing campaigns to attract amateur dancers and professionals. Use social media, dance publications, and partnerships with dance studios. Budget: $150,000.</li>
 				</ul>
 				<p><strong>Estimated Expenses:</strong> $600,000</p>
@@ -176,15 +176,15 @@ export default function FinancePage() {
 				<h3 className="text-lg font-bold mt-4">Phase 3: National Rollout and Expansion (18 - 36 Months)</h3>
 				<p><strong>Objectives:</strong></p>
 				<ul>
-					<li>Expand the Pro-Am division nationally, increasing participation and revenue.</li>
-					<li>Establish a strong brand presence within the Pro-Am market.</li>
+					<li>Expand the Teacher-Student division nationally, increasing participation and revenue.</li>
+					<li>Establish a strong brand presence within the Teacher-Student market.</li>
 				</ul>
 				<p><strong>Key Actions:</strong></p>
 				<ul>
-					<li><strong>National Rollout:</strong> Expand the Pro-Am competitions to additional regions across the U.S., targeting major metropolitan areas. Budget: $1.5 million.</li>
-					<li><strong>Membership Incentives:</strong> Offer special membership packages or discounts to amateurs participating in Pro-Am events, increasing overall USA Dance membership. Budget: $200,000.</li>
+					<li><strong>National Rollout:</strong> Expand the Teacher-Student competitions to additional regions across the U.S., targeting major metropolitan areas. Budget: $1.5 million.</li>
+					<li><strong>Membership Incentives:</strong> Offer special membership packages or discounts to amateurs participating in Teacher-Student events, increasing overall USA Dance membership. Budget: $200,000.</li>
 					<li><strong>Sponsorship and Partnerships:</strong> Secure sponsorships from dance-related brands (e.g., dancewear, shoes, supplements) to offset costs and increase revenue. Budget: $100,000 (net positive return expected).</li>
-					<li><strong>Marketing and Media:</strong> Increase marketing efforts, including media coverage of high-profile Pro-Am events, to attract new participants and sponsors. Budget: $500,000.</li>
+					<li><strong>Marketing and Media:</strong> Increase marketing efforts, including media coverage of high-profile Teacher-Student events, to attract new participants and sponsors. Budget: $500,000.</li>
 				</ul>
 				<p><strong>Estimated Expenses:</strong> $2.3 million</p>
 				<p><strong>Timeline:</strong> 18 - 36 months</p>
@@ -192,15 +192,15 @@ export default function FinancePage() {
 				<h3 className="text-lg font-bold mt-4">Phase 4: Optimization and Revenue Generation (36 - 60 Months)</h3>
 				<p><strong>Objectives:</strong></p>
 				<ul>
-					<li>Optimize the Pro-Am division for maximum profitability.</li>
+					<li>Optimize the Teacher-Student division for maximum profitability.</li>
 					<li>Use profits to fund other USA Dance initiatives and programs.</li>
 				</ul>
 				<p><strong>Key Actions:</strong></p>
 				<ul>
 					<li><strong>Optimization:</strong> Refine the competition structure based on feedback, improving the participant experience and operational efficiency. Budget: $100,000.</li>
-					<li><strong>Revenue Diversification:</strong> Introduce additional revenue streams such as exclusive Pro-Am workshops, merchandise sales, and premium membership tiers. Budget: $200,000.</li>
-					<li><strong>National and International Championships:</strong> Launch a flagship Pro-Am championship event with significant prizes and media coverage to establish USA Dance as a leader in the Pro-Am space. Budget: $1 million (high potential return).</li>
-					<li><strong>Profit Allocation:</strong> Use profits from the Pro-Am division to fund other USA Dance programs, such as youth development, professional certifications, and community outreach. Estimate an annual allocation of $1.5 - $2 million.</li>
+					<li><strong>Revenue Diversification:</strong> Introduce additional revenue streams such as exclusive Teacher-Student workshops, merchandise sales, and premium membership tiers. Budget: $200,000.</li>
+					<li><strong>National and International Championships:</strong> Launch a flagship Teacher-Student championship event with significant prizes and media coverage to establish USA Dance as a leader in the Teacher-Student space. Budget: $1 million (high potential return).</li>
+					<li><strong>Profit Allocation:</strong> Use profits from the Teacher-Student division to fund other USA Dance programs, such as youth development, professional certifications, and community outreach. Estimate an annual allocation of $1.5 - $2 million.</li>
 				</ul>
 				<p><strong>Estimated Expenses:</strong> $1.3 million</p>
 				<p><strong>Timeline:</strong> 36 - 60 months</p>
@@ -215,7 +215,7 @@ export default function FinancePage() {
 				<ul>
 					<li><strong>Year 1 - 2 Revenue:</strong> From pilot competitions, expect modest returns of $500,000 - $750,000, depending on participation levels and sponsorships.</li>
 					<li><strong>Year 3 - 5 Revenue:</strong> With national expansion and optimized operations, expect annual revenues of $2 - $4 million from competition fees, sponsorships, and merchandise sales.</li>
-					<li><strong>Long-Term Revenue:</strong> As the Pro-Am division gains popularity, revenues could grow to $5 - $10 million annually, providing significant funds for reinvestment into USA Dance’s broader programs.</li>
+					<li><strong>Long-Term Revenue:</strong> As the Teacher-Student division gains popularity, revenues could grow to $5 - $10 million annually, providing significant funds for reinvestment into USA Dance’s broader programs.</li>
 				</ul>
 
 				<h3 className="text-lg font-bold mt-4">Return on Investment (ROI)</h3>
@@ -227,14 +227,14 @@ export default function FinancePage() {
 
 				<h3 className="text-lg font-bold mt-4">Success Metrics</h3>
 				<ul className="mb-4">
-					<li><strong>Participation Growth:</strong> Steady increase in Pro-Am participants year over year.</li>
+					<li><strong>Participation Growth:</strong> Steady increase in Teacher-Student participants year over year.</li>
 					<li><strong>Revenue Growth:</strong> Consistent revenue increase with a target of $5 - $10 million annually by Year 5.</li>
-					<li><strong>Brand Positioning:</strong> Establish USA Dance as a leading name in the Pro-Am market, attracting top professionals and a wide range of amateurs.</li>
+					<li><strong>Brand Positioning:</strong> Establish USA Dance as a leading name in the Teacher-Student market, attracting top professionals and a wide range of amateurs.</li>
 					<li><strong>Contribution to USA Dance:</strong> Significant financial contributions to fund other programs, ensuring the long-term sustainability and growth of the organization.</li>
 				</ul>
 
 				<p className="mb-4">
-					By developing the Pro-Am division in parallel with other USA Dance initiatives, the organization can tap into a lucrative market, generate substantial revenue, and reinvest in its broader mission to promote dance as both a sport and an art form.
+					By developing the Teacher-Student division in parallel with other USA Dance initiatives, the organization can tap into a lucrative market, generate substantial revenue, and reinvest in its broader mission to promote dance as both a sport and an art form.
 				</p>
 			</div>
 		</div>
