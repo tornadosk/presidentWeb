@@ -49,7 +49,7 @@ export default function Home() {
 	};
 	const linkToDocs = { href: siteConfig.navItems.find((item) => item.label === "About")?.href ?? "/" };
 	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+		<section className="flex flex-col items-center justify-center gap-2 py-4 md:py-5 md:mx-4">
 			<div className="flex flex-wrap justify-center items-center gap-4">
 				<div className="inline-block max-w-lg text-center justify-center">
 					<h1 className={title()}>USA&nbsp;</h1>
@@ -133,9 +133,9 @@ export default function Home() {
 				</Modal>
 
 			</div>
-			<Card className="flex flex-col gap-2 p-2">
-				<div className="responsive-container flex flex-wrap justify-center items-center gap-4 mx-5">
-					<div className="mt-8">
+			<div className="flex flex-wrap justify-center items-center gap-4 mx-5 md:mx-20">
+				<Card className="gap-3 p-4 md:mx-8">
+					<div className="mt-8 mx-5">
 						<div className="mt-8">
 							<h3 className="text-lg font-semibold mb-2">Aleh Kulyba Statement:</h3>
 
@@ -217,9 +217,10 @@ export default function Home() {
 								Aleh Kulyba
 							</p>
 						</div>
+
 					</div>
-				</div>
-			</Card>
+				</Card>
+			</div>
 		</section >
 	);
 }
