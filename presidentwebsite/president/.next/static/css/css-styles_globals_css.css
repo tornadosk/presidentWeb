@@ -709,6 +709,10 @@ video {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .mx-\[calc\(\(theme\(spacing\.5\)-theme\(spacing\.1\)\)\/2\)\] {
   margin-left: calc((1.25rem - 0.25rem) / 2);
   margin-right: calc((1.25rem - 0.25rem) / 2);
@@ -6491,39 +6495,14 @@ video {
 }
 @media (min-width: 768px) {
 
-  .md\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .md\:mx-7 {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
-  }
-
-  .md\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .md\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
-  .md\:mx-12 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
   }
 
-  .md\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .md\:flex {
@@ -6542,11 +6521,6 @@ video {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
 @media (min-width: 1024px) {

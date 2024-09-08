@@ -134,7 +134,7 @@ export default function Home() {
 
 			</div>
 			<div className="flex flex-wrap justify-center items-center gap-4 mx-5 md:mx-20">
-				<Card className="gap-3 p-4 md:mx-8">
+				<Card className="gap-3 p-4 mx-8">
 					<div className="mt-8 mx-5">
 						<div className="mt-8">
 							<h3 className="text-lg font-semibold mb-2">Aleh Kulyba Statement:</h3>
