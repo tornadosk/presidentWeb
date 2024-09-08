@@ -761,6 +761,10 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -1945,6 +1949,12 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-inherit {
+  background-color: inherit;
+}
+.\!bg-current {
+  background-color: currentColor !important;
 }
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
@@ -6265,6 +6275,10 @@ video {
 .dark\:bg-transparent:is(.dark *) {
   background-color: transparent;
 }
+.dark\:bg-black:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
 .dark\:from-\[\#FFFFFF\]:is(.dark *) {
   --tw-gradient-from: #FFFFFF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
@@ -6503,6 +6517,11 @@ video {
   .md\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .md\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 
   .md\:flex {

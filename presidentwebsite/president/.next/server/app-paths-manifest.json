@@ -1,3 +1,6 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/competitive-dance/page": "app/competitive-dance/page.js",
+  "/social/page": "app/social/page.js",
+  "/college-dance/page": "app/college-dance/page.js"
 }
