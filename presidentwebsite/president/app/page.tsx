@@ -50,7 +50,7 @@ export default function Home() {
 	const linkToDocs = { href: siteConfig.navItems.find((item) => item.label === "About")?.href ?? "/" };
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<Card className="gap-3 p-4">
+			<Card className="p-4 flex flex-wrap justify-center items-center gap-4">
 				<div className="flex flex-wrap justify-center items-center gap-4">
 					<div className="inline-block max-w-lg text-center justify-center">
 						<h1 className={title()}>USA&nbsp;</h1>

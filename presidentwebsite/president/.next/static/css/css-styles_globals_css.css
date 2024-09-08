@@ -701,9 +701,9 @@ video {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 .mx-\[calc\(\(theme\(spacing\.5\)-theme\(spacing\.1\)\)\/2\)\] {
   margin-left: calc((1.25rem - 0.25rem) / 2);
@@ -753,10 +753,6 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -802,11 +798,11 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .box-border {
   box-sizing: border-box;
