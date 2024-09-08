@@ -50,92 +50,91 @@ export default function Home() {
 	const linkToDocs = { href: siteConfig.navItems.find((item) => item.label === "About")?.href ?? "/" };
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<Card className="gap-3 p-4">
-				<div className="flex flex-wrap justify-center items-center gap-4">
-					<div className="inline-block max-w-lg text-center justify-center">
-						<h1 className={title()}>USA&nbsp;</h1>
-						<h1 className={title({ color: "pink" })}>Dance:&nbsp;</h1>
-						<br />
-						<h1 className={title()}>
-							campaign of&nbsp;
-						</h1>
-						<br />
-						<h1 className={title()}>
-							Aleh Kulyba
-						</h1>
-						<Spacer y={5} />
-						<h2 className={title({ color: "blue" })}>
-							"United in rhythm, together we dance."
-						</h2>
-					</div>
-					<Image
-						isBlurred
-						width={240}
-						src="/Aleh_Kulyba_profile.JPG"
-						alt="NextUI Album Cover"
-						className="m-5"
-					/>
+			<div className="flex flex-wrap justify-center items-center gap-4">
+				<div className="inline-block max-w-lg text-center justify-center">
+					<h1 className={title()}>USA&nbsp;</h1>
+					<h1 className={title({ color: "pink" })}>Dance:&nbsp;</h1>
+					<br />
+					<h1 className={title()}>
+						campaign of&nbsp;
+					</h1>
+					<br />
+					<h1 className={title()}>
+						Aleh Kulyba
+					</h1>
+					<Spacer y={5} />
+					<h2 className={title({ color: "blue" })}>
+						"United in rhythm, together we dance."
+					</h2>
 				</div>
-				<div className="flex items-center justify-center gap-4 py-8 md:py-10">
-					<Link
-						className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
-						onPress={() => router.push(linkToDocs.href)}
-					>
-						About me
-					</Link>
-					<Button onPress={onOpen}
-						startContent={<HeartFilledIcon className="text-danger" />}
-						className={buttonStyles({ variant: "bordered", radius: "full" })}
-					>Support</Button>
-					<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-						<ModalContent>
-							{(onClose) => (
-								<>
-									<ModalHeader className="flex flex-col gap-1">Support</ModalHeader>
-									<ModalBody>
-										<Input
-											isRequired
-											value={value}
-											type="email"
-											label="Email"
-											variant="bordered"
-											isInvalid={isInvalid}
-											color={isInvalid ? "danger" : "success"}
-											errorMessage="Please enter a valid email"
-											onValueChange={handleEmailChange}
-											className="max-w-xs"
-										/>
-										<p>Stay updated on my journey to becoming the next USA Dance President! Subscribe for exclusive updates, upcoming plans, and ways to get involved. Let’s build the future of dance together!
-										</p>
-										<Textarea
-											variant="faded"
-											label="Leave a message"
-											placeholder="Enter a feedback message / question / suggestion"
-											description="Enter a feedback message / question / suggestion"
-											className="max-w-xs"
-											value={valueText}
-											onValueChange={setValueText}
-										/>
-										<p>
-											Your voice matters! Share your questions, feedback, or messages of support as we work together to shape the future of USA Dance. I’d love to hear from you!
-										</p>
-									</ModalBody>
-									<ModalFooter>
-										<Button color="danger" variant="light" onPress={onClose}>
-											Close
-										</Button>
-										<Button color="primary" onPress={handleSubmit} isDisabled={isInvalid}>
-											Support Submit
-										</Button>
-									</ModalFooter>
-								</>
-							)}
-						</ModalContent>
-					</Modal>
+				<Image
+					isBlurred
+					width={240}
+					src="/Aleh_Kulyba_profile.JPG"
+					alt="NextUI Album Cover"
+					className="m-5"
+				/>
+			</div>
+			<div className="flex items-center justify-center gap-4 py-8 md:py-10">
+				<Link
+					className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
+					onPress={() => router.push(linkToDocs.href)}
+				>
+					About me
+				</Link>
+				<Button onPress={onOpen}
+					startContent={<HeartFilledIcon className="text-danger" />}
+					className={buttonStyles({ variant: "bordered", radius: "full" })}
+				>Support</Button>
+				<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+					<ModalContent>
+						{(onClose) => (
+							<>
+								<ModalHeader className="flex flex-col gap-1">Support</ModalHeader>
+								<ModalBody>
+									<Input
+										isRequired
+										value={value}
+										type="email"
+										label="Email"
+										variant="bordered"
+										isInvalid={isInvalid}
+										color={isInvalid ? "danger" : "success"}
+										errorMessage="Please enter a valid email"
+										onValueChange={handleEmailChange}
+										className="max-w-xs"
+									/>
+									<p>Stay updated on my journey to becoming the next USA Dance President! Subscribe for exclusive updates, upcoming plans, and ways to get involved. Let’s build the future of dance together!
+									</p>
+									<Textarea
+										variant="faded"
+										label="Leave a message"
+										placeholder="Enter a feedback message / question / suggestion"
+										description="Enter a feedback message / question / suggestion"
+										className="max-w-xs"
+										value={valueText}
+										onValueChange={setValueText}
+									/>
+									<p>
+										Your voice matters! Share your questions, feedback, or messages of support as we work together to shape the future of USA Dance. I’d love to hear from you!
+									</p>
+								</ModalBody>
+								<ModalFooter>
+									<Button color="danger" variant="light" onPress={onClose}>
+										Close
+									</Button>
+									<Button color="primary" onPress={handleSubmit} isDisabled={isInvalid}>
+										Support Submit
+									</Button>
+								</ModalFooter>
+							</>
+						)}
+					</ModalContent>
+				</Modal>
 
-				</div>
-
-				<div className="flex flex-wrap justify-center items-center gap-4">
+			</div>
+			<Card className="flex flex-col gap-2 p-2">
+				<div className="responsive-container flex flex-wrap justify-center items-center gap-4 mx-5">
 					<div className="mt-8">
 						<div className="mt-8">
 							<h3 className="text-lg font-semibold mb-2">Aleh Kulyba Statement:</h3>
